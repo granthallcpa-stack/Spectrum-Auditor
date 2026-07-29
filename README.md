@@ -1,4 +1,5 @@
-<img width="1068" height="654" alt="image" src="https://github.com/user-attachments/assets/527cd05c-d483-492f-8961-bfc0c761d499" />
+<img width="1068" height="654" alt="screen2" src="https://github.com/user-attachments/assets/19e36820-8ffa-41e4-bbe2-53d0e8d41100" />
+
 
 
 
@@ -216,3 +217,6 @@ Once these steps are completed return to project root and:
 	2. /exports/known_signals: these are csv exports on data surrounding known signals from the knowledge database.
 	
 	3. /reports: these output html reports that you can go through and see a summary of the scan collected.
+
+
+<img width="1391" height="851" alt="screen" src="https://github.com/user-attachments/assets/2b607c0b-e084-4752-953f-dc3b79dbba10" />

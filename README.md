@@ -51,6 +51,15 @@ sudo apt update
 sudo apt install python3.12 python3.12-venv
 ```
 
+NOTE: Most Linux Distros do not not hold python 3.12 in apt, if you get an error saying "PACKAGE NOT FOUND", try this instead.
+
+```bash
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.12 python3.12-venv python3.12-dev
+```
+
+
 Verify the installation:
 
 ```bash

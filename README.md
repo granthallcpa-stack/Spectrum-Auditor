@@ -1,4 +1,18 @@
-README.MD
+Note to reader:
+
+* This system is modeled on a sample of the Jefferson County, AL licensed radio spectrum. I am aware that most users are not from this geographical area. However, with that being said the scanner should work fine. The only difference is the signal identifications will not be relevant to your environment.
+
+If you are interested in upgrading this system for personal use catered to your specific area, please contact me directly at granthall.cpa@gmail.com and include in your email:
+
+1. The geographic area which you are looking to identify.
+
+2. Whether use will be for personal, business, or for government.
+
+3. How you intend to use this system to better understand your RF Environment.
+
+
+
+###############
 
 
 

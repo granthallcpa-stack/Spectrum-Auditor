@@ -6,7 +6,14 @@ Main application.
 
 import time
 import sys
+import warnings
 from datetime import datetime
+
+warnings.filterwarnings(
+    "ignore",
+    message="pkg_resources is deprecated as an API.*",
+    category=UserWarning,
+)
 
 from analysis.signal_builder import SignalBuilder
 from config import SDR
@@ -41,6 +48,7 @@ from analysis.policy import PolicyCalibrator
 from analysis.signal_merger import merge_signals
 
 from storage.csv_export import export_signal_catalog
+
 
 log = open(
     f"logs/audit_{datetime.now():%Y%m%d_%H%M%S}.txt",

@@ -180,7 +180,7 @@ rtl_test
 Before running a spectrum survey, build the RF knowledge database:
 
 ```bash
-python knowledge/build_database.py
+python -m knowledge.build_database
 ```
 
 This creates:

@@ -1,7 +1,7 @@
 <img width="1068" height="654" alt="screen2" src="https://github.com/user-attachments/assets/19e36820-8ffa-41e4-bbe2-53d0e8d41100" />
 
 
-
+*This project is open source. No license is required to use or remake.
 
 Note to reader:
 
@@ -51,14 +51,51 @@ sudo apt update
 sudo apt install python3.12 python3.12-venv
 ```
 
-NOTE: Most Linux Distros do not not hold python 3.12 in apt, if you get an error saying "PACKAGE NOT FOUND", try this instead.
+NOTE: Most Linux Distros do not not hold python 3.12 in apt, if you get an error saying "PACKAGE NOT FOUND", try this instead based on your distro:
+
+Ubuntu:
 
 ```bash
-sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
+sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt install python3.12 python3.12-venv python3.12-dev
 ```
 
+Kali:
+
+```bash
+sudo apt install -y \
+build-essential \
+zlib1g-dev \
+libncurses5-dev \
+libgdbm-dev \
+libnss3-dev \
+libssl-dev \
+libreadline-dev \
+libffi-dev \
+libsqlite3-dev \
+libbz2-dev \
+liblzma-dev \
+libexpat1-dev \
+tk-dev \
+uuid-dev \
+
+cd /tmp
+
+wget https://www.python.org/ftp/python/3.12.11/Python-3.12.11.tgz
+
+tar -xf Python-3.12.11.tgz
+
+cd Python-3.12.11
+
+./configure --enable-optimizations
+
+make -j"$(nproc)"
+
+sudo make altinstall
+
+python3.12 --version
+```
 
 Verify the installation:
 
@@ -72,17 +109,19 @@ Expected output:
 Python 3.12.x
 ```
 
-## Create a Virtual Environment
+## Create Spectrum Auditor
 
 From the project root:
 
 ```bash
-python3.12 -m venv venv
+git clone https://github.com/granthallcpa-stack/Spectrum-Auditor.git
+cd ~/Spectrum_Audit
 ```
 
 Activate the virtual environment:
 
 ```bash
+python3.12 -m venv venv
 source venv/bin/activate
 ```
 
@@ -96,18 +135,6 @@ Install the project dependencies:
 
 ```bash
 pip install -r requirements.txt
-```
-
-Verify the Python version:
-
-```bash
-python --version
-```
-
-Expected output:
-
-```text
-Python 3.12.x
 ```
 
 ######################
@@ -202,16 +229,6 @@ The database only needs to be built once unless the RF knowledge source data is 
 
 
 ######################
-
-3. Install Python Dependencies
-
-With the virtual environment activated:
-
-```bash
-pip install -r requirements.txt
-```
-
-This installs the required Python packages, including PyRTLSDR, NumPy, SciPy, Matplotlib, and other project dependencies.
 
 
 ______________________

@@ -1,5 +1,5 @@
 """
-JCRO Report Footer
+Report Footer
 """
 
 
@@ -21,7 +21,7 @@ Conclusion
 
 <p>
 
-The Jefferson County Radiological Observatory successfully
+The Spectrum Auditor successfully
 completed the requested electromagnetic spectrum survey using
 adaptive environmental calibration and automated RF signal
 characterization techniques.
@@ -42,9 +42,9 @@ observed during this experiment.
 
 <p class="footer">
 
-Jefferson County Radiological Observatory<br>
+Spectrum Auditor<br>
 
-Department of The Electromagnetic Frequency Laboratory<br>
+Open Source Electromagnetic Frequency Laboratory<br>
 
 </p>
 

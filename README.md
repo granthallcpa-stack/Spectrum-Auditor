@@ -134,7 +134,7 @@ python -m pip install --upgrade pip
 Install the project dependencies:
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ######################
@@ -238,9 +238,18 @@ Once these steps are completed return to project root and:
 
 1. run an rtl_test. if this is successful, you can press ctrl ^ C and clear.
 
-2. run your first audit by running python audit.py.
+2. run your first audit by running
 
-3. Once you have completed the audit you should see at the end an output directory where an html report of the comprehensive scan was made. There are three primary data storage locations:
+```
+python audit.py.
+```
+or if you want to run continuous scans (runs every 20 minutes). you can run:
+
+```
+python continuous_audit.py.
+```
+
+5. Once you have completed the audit you should see at the end an output directory where an html report of the comprehensive scan was made. There are three primary data storage locations:
 
 	1. /data: these are csv reports that give you insights on your scan as well as previous scans.
 	

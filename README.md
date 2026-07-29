@@ -115,7 +115,7 @@ From the project root:
 
 ```bash
 git clone https://github.com/granthallcpa-stack/Spectrum-Auditor.git
-cd ~/Spectrum_Auditor
+cd ~/Spectrum-Auditor
 ```
 
 Activate the virtual environment:

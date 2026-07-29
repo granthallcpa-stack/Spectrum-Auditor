@@ -26,7 +26,7 @@ def build_header(
 
 <h1>
 
-Jefferson County Radiological Observatory (JCRO)
+The Spectrum Auditor
 
 </h1>
 
@@ -111,7 +111,7 @@ Executive Summary
 
 <p>
 
-The Jefferson County Radiobiology Observatory (JCRO)
+The Spectrum Auditor
 completed a calibrated spectrum survey consisting of
 <b>{summary["windows"]:,}</b> observation windows collected
 over <b>{summary["duration"]:.1f} seconds</b>.
